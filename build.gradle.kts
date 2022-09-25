@@ -13,6 +13,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation("org.slf4j:slf4j-simple:2.0.0")
+    implementation ("io.github.microutils:kotlin-logging:3.0.0")
 }
 
 tasks.test {
