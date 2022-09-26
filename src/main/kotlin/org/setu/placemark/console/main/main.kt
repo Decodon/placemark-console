@@ -5,6 +5,7 @@ import org.setu.placemark.console.models.PlacemarkModel
 
 private val logger = KotlinLogging.logger{}
 var placemark = PlacemarkModel()
+val placemarks = ArrayList<PlacemarkModel>()
 fun main(args: Array<String>){
     logger.info { "Launching Placemark Console App" }
     println("Placemark Kotlin App Version 1.0")
@@ -33,7 +34,7 @@ fun menu() : Int {
     println("Main Menu")
     println("1. Add Placemark")
     println("2. Update Placemark")
-    println("1. List All Placemark")
+    println("3. List All Placemark")
     println("-1. Exit")
     println()
     println("Enter an integer : ")
@@ -54,20 +55,28 @@ fun addPlacemark(){
     placemark.title = readLine()!!
     println("Enter a description: ")
     placemark.description = readLine()!!
-    println("You entered ${placemark.title} for title with a description of ${placemark.description}")
+
+    if (placemark.title.isNotEmpty() && placemark.description.isNotEmpty()){
+        placemarks.add(placemark.copy())
+        logger.info("Placemark added: [$placemark]")
+    }
+    else
+        logger.info("Placemark not added")
 }
 
 fun updatePlacemark(){
     println("Update Placemark")
     println()
-    println("Enter a new title for [ $placemark.title ]: ")
+    print("Enter a new Title for [ " + placemark.title + " ] : ")
     placemark.title = readLine()!!
-    println("Enter a new description instead of [ ${placemark.description} ]: ")
+    print("Enter a new Description for [ " + placemark.description + " ] : ")
     placemark.description = readLine()!!
-    println("You updated with ${placemark.title} for title and a new description of ${placemark.description}")
+    println("You updated [ " + placemark.title + "] for title " + "and [ " + placemark.description + " ] for description ")
 }
 
-fun listPlacemarks(){
-    println("You Chose to List All Placemarks")
+fun listPlacemarks() {
+    println("List all placemarks")
+    println()
+    placemarks.forEach { logger.info("$it") }
 }
 
