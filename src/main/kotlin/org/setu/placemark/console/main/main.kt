@@ -3,6 +3,8 @@ package org.setu.placemark.console.main
 import mu.KotlinLogging
 
 private val logger = KotlinLogging.logger{}
+var title = ""
+var description = ""
 fun main(args: Array<String>){
     logger.info { "Launching Placemark Console App" }
     println("Placemark Kotlin App Version 1.0")
@@ -45,11 +47,24 @@ fun menu() : Int {
 }
 
 fun addPlacemark(){
-    println("You Chose Add Placemark")
+
+    println("Add Placemark")
+    println()
+    println("Enter a title : ")
+    title = readLine()!!
+    println("Enter a description: ")
+    description = readLine()!!
+    println("You entered $title for title with a description of $description")
 }
 
 fun updatePlacemark(){
-    println("You Chose to Update Placemark")
+    println("Update Placemark")
+    println()
+    println("Enter a new title for [ $title ]: ")
+    title = readLine()!!
+    println("Enter a new description instead of [ $description ]: ")
+    description = readLine()!!
+    println("You updated with $title for title and a new description of $description")
 }
 
 fun listPlacemarks(){
