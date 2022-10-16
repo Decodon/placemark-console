@@ -26,7 +26,7 @@ fun main(args: Array<String>){
         println()
     } while (input != -1)
     logger.info("Shutting down Placemark Console App")
-    }
+}
 
 
 fun menu() : Int {
@@ -74,19 +74,28 @@ fun updatePlacemark(){
     listPlacemarks()
     var searchId = getId()
     val aPlacemark = search(searchId)
+    var tempTitle : String?
+    var tempDescription: String?
 
-    if (aPlacemark !=null){
+    if (aPlacemark !=null) {
         print("Enter a new Title for [ " + aPlacemark.title + " ] : ")
-        aPlacemark.title = readLine()!!
+        tempTitle = readLine()!!
         print("Enter a new Description for [ " + aPlacemark.description + " ] : ")
-        aPlacemark.description = readLine()!!
-        println(
-            "You updated [ " + aPlacemark.title + " ] for title " +
-                    "and [ " +aPlacemark.description + " ] for description"
-        )
+        tempDescription = readLine()!!
+
+        if (!tempTitle.isNullOrEmpty() && !tempDescription.isNullOrEmpty()) {
+            aPlacemark.title = tempTitle
+            aPlacemark.description = tempDescription
+            println(
+                "You updated [ " + aPlacemark.title + " ] for title " +
+                        "and [ " + aPlacemark.description + " ] for description"
+            )
+            logger.info("Placemark Updated : [ $aPlacemark ]")
+        } else
+            logger.info("Placemark Not Updated")
     }
     else
-        println("Placemark Not Updated")
+        println("Placemark Not Update")
 }
 
 fun listPlacemarks() {
