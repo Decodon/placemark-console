@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6790f8e-ed39-4478-8a10-168066220fbd" name="Changes" comment="Week 3 - Exercise Solutions">
+    <list default="true" id="a6790f8e-ed39-4478-8a10-168066220fbd" name="Changes" comment="Week 4 - Refactoring The Model (MVC) - Need to implement to main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665936351240</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Week 4 - Refactoring The Model (MVC) - Need to implement to main">
+      <created>1666012446528</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666012446528</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +201,7 @@
     <MESSAGE value="Week 3 - Working with Collection Classes - Part 1" />
     <MESSAGE value="Week 3 - Working with Collection Classes - Part 2" />
     <MESSAGE value="Week 3 - Exercise Solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Week 3 - Exercise Solutions" />
+    <MESSAGE value="Week 4 - Refactoring The Model (MVC) - Need to implement to main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 4 - Refactoring The Model (MVC) - Need to implement to main" />
   </component>
 </project>
