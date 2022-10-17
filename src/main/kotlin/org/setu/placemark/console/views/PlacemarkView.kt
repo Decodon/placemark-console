@@ -33,7 +33,7 @@ class PlacemarkView {
         println()
     }
 
-    fun showPlacemark(placemark: PlacemarkMemStore){
+    fun showPlacemark(placemark: PlacemarkModel?){
         if (placemark != null)
             println("Placemark Details [ $placemark ]")
         else
