@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6790f8e-ed39-4478-8a10-168066220fbd" name="Changes" comment="Week 4 - Exercise Solution. Adding start to the controller">
+    <list default="true" id="a6790f8e-ed39-4478-8a10-168066220fbd" name="Changes" comment="Week 5 - Additional Helper Files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -200,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666297151823</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Week 5 - Additional Helper Files">
+      <created>1666809892619</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666809892619</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +235,7 @@
     <MESSAGE value="Week 4 - Refactoring The View (MVC) - Need to implement to main" />
     <MESSAGE value="Week 4 - Fixing Error" />
     <MESSAGE value="Week 4 - Exercise Solution. Adding start to the controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Week 4 - Exercise Solution. Adding start to the controller" />
+    <MESSAGE value="Week 5 - Additional Helper Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 5 - Additional Helper Files" />
   </component>
 </project>
